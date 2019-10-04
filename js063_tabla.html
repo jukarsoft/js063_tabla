@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta lang="es">
+	<meta name="description" content="Control HTML y CSS3"> 
+	<meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  	<meta name="author" content="Juan Carlos">
+	<title>bucle for anidado</title>
+	<style type="text/css">
+		table {
+			border:2px solid black;
+			display: inline-block;
+		}
+		td, th {
+			border:1px solid black;
+		}
+	</style>
+	<script type="text/javascript">
+		var valorMax = 10;	
+		var valorMin = 1;
+		
+		for (tabla=valorMin; tabla <= valorMax; tabla++){
+			document.write('<table>')
+			document.write(`<tr>`)
+			document.write(`<th>tabla ${tabla}</th>`)
+			document.write(`</tr>`)
+			for (i=valorMin; i <= valorMax; i++) {
+				document.write(`<tr>`)
+				document.write(`<td>${tabla} X ${i} = ${tabla*i}</td>`)
+				document.write(`</tr>`)
+			} 
+			document.write('</table>')
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
